@@ -1,0 +1,475 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#myLogo {
+    /* color: white; */
+    font-size: 25px;
+    font-weight: bolder;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 0px 6px;
+}
+
+.bg-myHed {
+    background: linear-gradient(45deg, #009fff, #ec2f4b);
+}
+
+#contactMeBtn {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 5px;
+    background: white;
+}
+
+#contactMeBtn:hover {
+    color: white;
+    background: linear-gradient(-45deg, #009fff, #ec2f4b);
+}
+
+.callImg {
+    width: 35px;
+    height: 35px;
+    padding: 4px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #b10ca8, #7b04aa);
+}
+
+.myNavItem {
+    color: white;
+}
+
+#myPhoto {
+    width: 80%;
+}
+
+#home {
+    /* margin-top: -1%; */
+
+    /* margin-left: 50px; */
+}
+
+#name {
+    margin: auto auto;
+    text-align: center;
+}
+
+#name strong {
+    font-size: 40px;
+}
+
+#myName {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    width: 60%;
+    height: 200px;
+    margin-top: 20px;
+
+}
+
+.shadow {
+    box-shadow: 0px 18px 39.1px 6.9px rgba(255, 255, 255, 0.34) !important;
+}
+
+.card1 {
+    border: 0;
+    width: 80%;
+    margin: auto;
+}
+
+.card-title1 {
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.card-footer1 {
+    border: 0;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.progress-wrapper1 {
+
+    height: 130px;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.wave::before,
+.wave::after {
+    content: "";
+    position: absolute;
+    width: 880px;
+    height: 880px;
+    bottom: 0;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 45%;
+    transform: translateX(-50%) rotate(0);
+    -webkit-animation: rotate 6s linear infinite;
+    animation: rotate 6s linear infinite;
+    z-index: 10;
+}
+
+.wave::after {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 47%;
+    transform: translateX(-50%) rotate(0);
+    -webkit-animation: rotate 10s linear -5s infinite;
+    animation: rotate 10s linear -5s infinite;
+    z-index: 20;
+}
+
+@keyframes rotate {
+    50% {
+        transform: translateX(-50%) rotate(180deg);
+    }
+
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+
+}
+
+#myName span {
+    font-size: 20px;
+    width: 100%;
+    color: #ec2f4b;
+    font-weight: bold;
+    text-align: center;
+}
+
+#myName span::before {
+
+    content: "Software Developer";
+    animation: animate infinite 10s;
+    padding-left: 10px;
+
+}
+
+@keyframes animate {
+
+    0% {
+        content: "Website Developer";
+    }
+
+    50% {
+        content: "Android Developer";
+
+    }
+}
+
+
+#DAnim {
+    animation: animateD 2s infinite;
+}
+
+@keyframes animateD {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.heart{
+    animation: animateD 2s infinite;
+}
+
+#section-edu {
+    background-color: rgba(95, 93, 93, 0.15);
+}
+
+.edu-itemView {
+    background-color: white;
+    border-radius: 3px;
+}
+
+.edu-itemView:before,
+.edu-itemView:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100%+4px);
+    height: calc(100%+4px);
+    z-index: -1;
+    animation: backanim;
+
+}
+
+.year-item {
+    width: 80%;
+
+    color: white;
+    font-size: 18px;
+    height: 34px;
+    border: 0px;
+
+    font-weight: bold;
+    background: linear-gradient(90deg, red, yellow);
+}
+
+.text-gradient {
+    background: -webkit-linear-gradient(45deg, rgb(122, 53, 65), rgb(166, 79, 248));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container-progress {
+    height: 80px;
+
+}
+
+.progress-back {
+
+    width: 90%;
+    height: 10px;
+    background-color: #959595;
+    border-radius: 5px;
+}
+
+.progress-front {
+
+    height: 10px;
+    background: linear-gradient(45deg, yellow, red);
+    ;
+    border-radius: 5px;
+    /* animation: progressBar-animation 1s infinite; */
+
+}
+
+
+.progress-front span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: red;
+    float: right;
+    margin-top: -15px;
+    margin-left: -20px;
+    color: #333;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255,255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0,0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+.number{
+    font-weight: 600px;
+    color: #555;
+}
+.progess-circle{
+    position:absolute;
+    top: 0;
+      
+
+}
+.progess-circle circle{
+    fill: none;
+   stroke: url(#grad-sboot);
+    stroke-width: 20px;
+    stroke-dasharray: 424;
+    stroke-dashoffset: 424;
+    animation: circle-progress-anim 2s linear forwards;
+}
+@keyframes circle-progress-anim {
+    100%{
+        stroke-dashoffset: 47.2;  
+    } 
+}
+.skills-list{
+   display: flex;
+   justify-content: center;
+   width: 180px !important;
+}
+.bgbox-title{
+    background: linear-gradient(45deg,yellow,red);
+    width: 160px;
+    padding: 10px 20px;
+    transform: rotate(-5deg);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+   
+    font-size: 20px;
+   
+}
+.dia-box-text{
+    transform: rotate(5deg);
+}
+.project-tab{
+    width: 80%;
+    height:550px;
+    position: relative;
+    margin: auto;
+   
+    
+}
+.btn-box{
+    /* display: flex; */
+    border-bottom: 1px solid #CCC;
+}
+.btn-box button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 19%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-box .fa{
+    margin-right: 10px;
+}
+
+.btn-box button:hover{
+    background-color: #eee;
+    color: #ff7846;
+}
+@media (max-width:500px) {
+
+    .btn-box button{
+        width: 18%;
+        font-size: 10px;
+    }
+    .edu-p{
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 150px;
+    }
+    /* width */
+
+
+}
+
+div::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+ div::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+ div::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+ div::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+.btn-box button:focus{
+    border: none;
+    outline: none;
+}
+.project-content{
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500px;
+   
+}
+
+.project-item img{
+    width: 70%;
+    justify-content: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+   
+}
+.project-item p{
+    text-align: justify;
+    padding-right: 10px !important;
+   
+}
+#content1{
+    visibility: visible;
+}
+
+#content2, #content3, #content4, #content5{
+    visibility: hidden;
+}
+#tab-btn-1{
+    color:#ff7846;
+}
+
+.gitHUbLink{
+    text-decoration: none;
+    background:linear-gradient(45deg, #b10ca8, #7b04aa);
+    color: white;
+    font-size: 18px;
+    padding: 3px 16px !important;
+    border-radius: 10px;
+}
+.certificate{
+    /* background-color: #eee; */
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.bg-badge{
+background: linear-gradient(45deg,#200122,#6f0000);
+color: white;
+}
+.bg-certificate{
+    background: linear-gradient(45deg,#c33764,#1d2671);
+    color: white;
+}
+.bg-award{
+    background: linear-gradient(45deg,#3a1c71,#d76d77,#ffaf7b);
+    color: white;
+}
+
+.scrolled-down{
+transform: translateY(-100%) !important;
+transition: all 0.3s ease-in-out !important;
+}
+.scrolled-up{
+    transform: translateY(0) !important;
+    transition: all 0.3s ease-in-out !important;
+}
+  
