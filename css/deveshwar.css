@@ -164,10 +164,13 @@ body {
         content: "Website Developer";
     }
 
-    50% {
+    35% {
         content: "Android Developer";
 
     }
+70%{
+content: "Coding Trainer";
+}
 }
 
 
