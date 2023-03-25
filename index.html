@@ -1,764 +1,1047 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/deveshwar.css" />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deveshwar Saste</title>
+  </head>f
+  <body>
+    <nav
+      class="bg-myHed sticky-top autohide navbar navbar-expand-lg navbar-dark"
+    >
+      <a class="navbar-brand" id="myLogo" href="#">DS</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<head>
-  <link rel="stylesheet" href="./css/deveshwar.css">
-  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deveshwar Saste</title>
-</head>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link h5" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link h5"
+              onclick="ancher_scrolled()"
+              href="#section-Skills"
+              >Skills</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link h5"
+              onclick="ancher_scrolled()"
+              href="#section-edu"
+              >Education</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link h5"
+              onclick="ancher_scrolled()"
+              href="#section-prjects"
+              >Projects</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link h5"
+              onclick="ancher_scrolled()"
+              href="#section-achivments"
+              >Certificates</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link h5"
+              onclick="ancher_scrolled()"
+              href="#section-achivments"
+              >Achivements</a
+            >
+          </li>
+        </ul>
+        <a
+          href="tel:7040121294"
+          onmouseenter="showNum()"
+          onmouseleave="hideNum()"
+          id="contactMeBtn"
+          >Contact Me
+          <span
+            ><img
+              class="callImg"
+              src="./css/icon/icons8-phone-ios-filled-96.png"
+              alt=""
+          /></span>
+        </a>
+      </div>
+    </nav>
+    <!-- <div class="bg-myHed" style="height: 30%;"></div> -->
 
-<body>
-
-  <nav class="bg-myHed sticky-top autohide navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" id="myLogo" href="#">DS</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item active">
-          <a class="nav-link h5" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link h5" onclick="ancher_scrolled()" href="#section-Skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link h5" onclick="ancher_scrolled()" href="#section-edu">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link h5" onclick="ancher_scrolled()" href="#section-prjects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link h5" onclick="ancher_scrolled()" href="#section-achivments">Certificates</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link h5" onclick="ancher_scrolled()" href="#section-achivments">Achivements</a>
-        </li>
-      </ul>
-      <a href="tel:7040121294" onmouseenter="showNum()" onmouseleave="hideNum()" id="contactMeBtn">Contact Me <span><img
-            class="callImg" src="./css/icon/icons8-phone-ios-filled-96.png" alt=""></span>
-      </a>
-    </div>
-  </nav>
-  <!-- <div class="bg-myHed" style="height: 30%;"></div> -->
-
-
-
-  <section class="row mx-0 p-0" style="z-index: -1;" id="home">
-    <div class="col-md-4 text-center col-sm-12">
-      <img id="myPhoto" src="./img/deveshwarsaste1.png" alt="error">
-    </div>
-
-    <div class="col-md-8 col-sm-12 p-0" style="z-index: 4;" id="name">
-      <div class="row shadow mx-auto" id="myName">
-        <p class="col-12 m-0 p-0 h3">I Am</p>
-
-        <strong class="col-12 m-0 p-0"><strong id="DAnim">D</strong>eveshwar Saste</strong>
-
-
-        <span></span>
-
-
+    <section class="row mx-0 p-0" style="z-index: -1" id="home">
+      <div class="col-md-4 text-center col-sm-12">
+        <img id="myPhoto" src="./img/deveshwarsaste1.png" alt="error" />
       </div>
 
-    </div>
-    <div class="col-12 mx-0 p-0" style="z-index: 2; margin-top: -18%;">
-      <svg xmlns="http://www.w3.org/2000/svg" style="z-index: 10;" viewBox="0 0 1440 320">
-        <defs>
-          <linearGradient id="grad2" x1="100%" y1="0%" x2="0%" y2="40%">
-            <stop offset="0%" style="stop-color:#ec2f4b;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#009fff;stop-opacity:1" />
-          </linearGradient>
-        </defs>
+      <div class="col-md-8 col-sm-12 p-0" style="z-index: 4" id="name">
+        <div class="row shadow mx-auto" id="myName">
+          <p class="col-12 m-0 p-0 h3">I Am</p>
 
-        <path fill="url(#grad2)" fill-opacity="1"
-          d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-        </path>
-      </svg>
-      <div class="m-0 p-0">
-        <div class="shadow  p-2 mt-0 mb-3">
-          <div class="bgbox-title my-auto ml-5">
-            <p class="m-0 p-0 dia-box-text"> Hello World </p>
-          </div>
-        </div>
-        <p class="mx-4 p-3 mt-2 mb-2 text-justify " style="font-size: 18px;"> &emsp;&emsp;&emsp; <strong>Thanks for
-            visiting my profile,</strong> I am a self-motivated person with excellent problem solving skills. I have
-          team leader skills, also i enjoy solving others problem and sharing my knowledge. Very punctual about time and
-          always eager to learn new things. Analytical mind with logical thinking. Software development is my passion. I
-          got this interest from my education. i learned java, c++, Html, css, javascript and many more languages.In my
-          free time you will find me riding mountain.
-        </p>
-      </div>
-      <hr class="m-0">
-    </div>
-  </section>
-  <div>
-    <section id="section-Skills" class=" m-0 p-0">
-      <div class="shadow  p-2 mt-0 mb-3">
-        <div class="bgbox-title my-auto ml-5">
-          <p class="dia-box-text m-0 p-0">Skills</p>
+          <strong class="col-12 m-0 p-0">
+            <ul class="dynamic">
+              <li style="--i: 1">D</li>
+              <li style="--i: 2">e</li>
+              <li style="--i: 3">v</li>
+              <li style="--i: 4">e</li>
+              <li style="--i: 5">s</li>
+              <li style="--i: 6">h</li>
+              <li style="--i: 7">w</li>
+              <li style="--i: 8">a</li>
+              <li style="--i: 9">r</li>
+              <li style="--i: 10">&nbsp;</li>
+              <li style="--i: 11">S</li>
+              <li style="--i: 12">a</li>
+              <li style="--i: 13">s</li>
+              <li style="--i: 14">t</li>
+              <li style="--i: 15">e</li>
+            </ul>
+          </strong>
+
+          <span></span>
         </div>
       </div>
-      <div class=" mx-0 mb-0 mt-3 p-0 row justify-content-center">
-        <div class="skills-list mb-3 col-md-3 col-sm-4">
-          <div class="outer">
-            <div class="inner">
-              <div id="number text-center">
-                90% <br>
-                <strong>JAVA</strong>
-              </div>
+      <div class="col-12 mx-0 p-0" style="z-index: 2; margin-top: -18%">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          style="z-index: 10"
+          viewBox="0 0 1440 320"
+        >
+          <defs>
+            <linearGradient id="grad2" x1="100%" y1="0%" x2="0%" y2="40%">
+              <stop offset="0%" style="stop-color: #ec2f4b; stop-opacity: 1" />
+              <stop
+                offset="100%"
+                style="stop-color: #009fff; stop-opacity: 1"
+              />
+            </linearGradient>
+          </defs>
+
+          <path
+            fill="url(#grad2)"
+            fill-opacity="1"
+            d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+        <div class="m-0 p-0">
+          <div class="shadow p-2 mt-0 mb-3">
+            <div class="bgbox-title my-auto ml-5">
+              <p class="m-0 p-0 dia-box-text">Hello World</p>
             </div>
           </div>
-          <svg class="progess-circle" width="160px" height="160px">
-            <circle class="pro-cer" cx="80" cy="80" r="70" stroke-linecap="round" />
-          </svg>
-
+          <p class="mx-4 p-3 mt-2 mb-2 text-justify" style="font-size: 18px">
+            &emsp;&emsp;&emsp;
+            <strong>Thanks for visiting my profile,</strong> I am a
+            self-motivated person with excellent problem solving skills. I have
+            team leader skills, also i enjoy solving others problem and sharing
+            my knowledge. Very punctual about time and always eager to learn new
+            things. Analytical mind with logical thinking. Software development
+            is my passion. I got this interest from my education. i learned
+            java, c++, Html, css, javascript and many more languages.In my free
+            time you will find me riding mountain.
+          </p>
         </div>
-        <div class="skills-list  mb-3 col-md-3 col-sm-4">
-          <div class="outer">
-            <div class="inner">
-              <div class="number text-center">
-                80%
-                <br>
-                <strong>
-                  Data Structure
-                </strong>
-              </div>
-            </div>
-          </div>
-          <svg class="progess-circle" width="160px" height="160px">
-
-            <circle class="pro-cer" cx="80" cy="80" r="70" stroke-linecap="round"
-              style="stroke-dasharray: 377; stroke-dashoffset:377;" />
-          </svg>
-        </div>
-        <div class="skills-list  mb-3 col-md-3 col-sm-4">
-          <div class="outer">
-            <div class="inner">
-              <div class="number text-center">
-                75% <br>
-                <strong>
-
-                  JavaScript
-                </strong>
-              </div>
-            </div>
-          </div>
-          <svg class="progess-circle" width="160px" height="160px">
-
-            <circle class="pro-cer" cx="80" cy="80" r="70" stroke-linecap="round"
-              style="stroke-dasharray: 354; stroke-dashoffset:354;" />
-          </svg>
-        </div>
-        <div class="skills-list  mb-3 col-md-3 col-sm-4">
-          <div class="outer">
-            <div class="inner">
-              <div class="number text-center">
-                85% <br>
-                <strong>
-
-                  HTML & CSS
-                </strong>
-              </div>
-            </div>
-          </div>
-          <svg class="progess-circle" width="160px" height="160px">
-
-            <circle class="pro-cer" cx="80" cy="80" r="70" stroke-linecap="round"
-              style="stroke-dasharray: 401; stroke-dashoffset:401;" />
-          </svg>
-        </div>
-        <div class="skills-list mb-3 col-md-3 col-sm-4">
-          <div class="outer">
-            <div class="inner">
-              <div class="number text-center">
-                60% <br>
-                <strong>
-
-                  Angular & ReactJS
-                </strong>
-              </div>
-            </div>
-          </div>
-          <svg class="progess-circle" width="160px" height="160px">
-
-            <circle class="pro-cer" cx="80" cy="80" r="70" stroke-linecap="round"
-              style="stroke-dasharray: 283; stroke-dashoffset:283; " />
-          </svg>
-
-        </div>
-        <div class="skills-list  mb-3 col-md-3 col-sm-4">
-          <div class="outer">
-            <div class="inner">
-              <div class="number text-center">
-                70% <br>
-                <strong>
-
-                  SQL
-                </strong>
-              </div>
-            </div>
-          </div>
-          <svg class="progess-circle" width="160px" height="160px">
-
-            <circle class="pro-cer" cx="80" cy="80" r="70" stroke-linecap="round"
-              style="stroke-dasharray: 330; stroke-dashoffset:330;" />
-          </svg>
-
-        </div>
-        <div class="skills-list mb-3 col-md-3 col-sm-4">
-          <div class="outer">
-            <div class="inner">
-              <div class="number text-center">
-                78% <br>
-                <strong>
-
-                  Spring Boot
-                </strong>
-              </div>
-            </div>
-          </div>
-          <svg class="progess-circle" width="160px" height="160px">
-            <defs>
-              <linearGradient id="grad-sboot" height>
-                <stop offset="0%" style="stop-color:#ff0084;stop-opacity:1" />
-                <stop offset="100%" style="stop-color:#33001b;stop-opacity:1" />
-              </linearGradient>
-            </defs>
-            <circle class="pro-cer" cx="80" cy="80" r="70" stroke-linecap="round"
-              style="stroke-dasharray: 368; stroke-dashoffset:368;" />
-          </svg>
-        </div>
-        <div class="skills-list  mb-3 col-md-3 col-sm-4">
-          <div class="outer">
-            <div class="inner">
-              <div class="number text-center">
-                60% <br>
-                <strong>
-
-                  Android
-                </strong>
-              </div>
-            </div>
-          </div>
-          <svg class="progess-circle" width="160px" height="160px">
-            <circle class="pro-cer" cx="80" cy="80" r="70" stroke-linecap="round"
-              style="stroke-dasharray: 283; stroke-dashoffset:283;" />
-          </svg>
-        </div>
-        <div class="skills-list mb-3 col-md-3 col-sm-4">
-          <div class="outer">
-            <div class="inner">
-              <div class="number text-center">
-                85% <br>
-                <strong>
-
-                  Bootstrap
-                </strong>
-              </div>
-            </div>
-          </div>
-          <svg class="progess-circle" width="160px" height="160px">
-
-            <circle class="pro-cer" cx="80" cy="80" r="70" stroke-linecap="round"
-              style="stroke-dasharray: 401; stroke-dashoffset:401;" />
-          </svg>
-        </div>
-        <div class="skills-list mb-3 col-md-3 col-sm-4">
-          <div class="outer">
-            <div class="inner">
-              <div class="number text-center">
-                70% <br>
-                <strong>
-
-                  J2EE
-                </strong>
-              </div>
-            </div>
-          </div>
-          <svg class="progess-circle" width="160px" height="160px">
-
-            <circle class="pro-cer" cx="80" cy="80" r="70" stroke-linecap="round"
-              style="stroke-dasharray: 330; stroke-dashoffset:330;" />
-          </svg>
-        </div>
-
+        <hr class="m-0" />
       </div>
-
     </section>
-  </div>
 
-  <section id="section-edu" class="row m-0 p-0 ">
-
-    <div class="col-12 h3 mt-0 p-2 mb-3 text-center shadow">
-      <div class="bgbox-title my-auto ml-5">
-        <p class="m-0 p-0 dia-box-text"> Education </p>
-      </div>
-    </div>
-    <div class="shadow col-md-7 col-sm-10 mr-auto ml-2 mt-2 text-center edu-itemView">
-      <div class="row mt-2">
-        <div class="col-1 m-0 p-0">
-          <i class="fa fa-university ml-1 fa-2x" aria-hidden="true"></i>
-        </div>
-        <div class="col-8 h5 text-left ml-3 my-auto p-0">
-          Center for Development of Advance Computing, Kharghar ( Mumbai )
-        </div>
-
-        <div class="col-md-2 col-sm-10 m-0 p-0">
-          <div class="row mt-1 mx-auto">
-            <i class="fa fa-caret-left my-auto fa-2x" style="color:red;border:0px"></i>
-            <div class="year-item">
-              2021
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 h3 my-2 text-left text-gradient">Post Graduation-Diploma in Advance Computing</div>
-      <div class="col-12 text-justify mb-2 edu-p">During cdac journey,I had learn oops concepts,basic java, Data
-        Structure, DBMS, ReactJS, NodeJS,Advance Java, HTML,CSS and Javascript. Worked on many projects and does
-        participation in many activities. </div>
-    </div>
-    <div class="shadow col-md-7 col-sm-10 ml-auto mr-2 mt-2 text-center edu-itemView">
-      <div class="row mt-2">
-        <div class="col-1 m-0 p-0">
-          <i class="fa fa-university fa-2x ml-1" aria-hidden="true"></i>
-        </div>
-        <div class="col-8 h5 text-left ml-3 my-auto p-0">
-          Dr. Babasaheb Ambedkar Marathawada University, Aurangabad ( Maharashtra )
-        </div>
-
-        <div class="col-md-2 col-sm-10 my-0 mx-auto p-0">
-          <div class="row mt-1 mx-auto">
-            <i class="fa fa-caret-left my-auto fa-2x" style="color:red;border:0px"></i>
-            <div class="year-item align-middle">
-              2019
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 h3 my-2 text-left text-gradient">BE-Computer Science & Engineering</div>
-      <div class="col-12 text-justify mb-2 edu-p">During my graduation, had learn subjects like Java, Computer Network,
-        Visual
-        Modeling, Mobile Computing any many more. Worked on many projects like Gym Management System(C#.net),Text To
-        Voice Conversion App(Android) and A Social Networking Site (Asp.net). Participated in many activities like Blind
-        Programming Compitition, Blood Donation, Traser Hunt and some Cultural events.</div>
-    </div>
-    <div class="shadow col-md-7 col-sm-10 mr-auto mx-2 mt-2 text-center edu-itemView">
-      <div class="row mt-2">
-        <div class="col-1 m-0 p-0">
-          <i class="fa fa-university fa-2x ml-1" aria-hidden="true"></i>
-        </div>
-        <div class="col-8 h5 text-left ml-3 my-auto p-0">
-          Maharashtra State Board of Secondary & Higher Secondary Education, Aurangabad ( Maharashtra )
-        </div>
-
-        <div class="col-md-2 col-sm-10 my-0 mx-auto p-0">
-          <div class="row mt-1 mx-auto">
-            <i class="fa fa-caret-left my-auto fa-2x" style="color:red;border:0px"></i>
-            <div class="year-item align-middle">
-              2014
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 h3 my-2 text-left text-gradient">Higher Secondary School Certificate ( 12th )</div>
-      <div class="col-12 text-justify mb-2 edu-p">Belong to general science field. Had learned Physics, Chemistry,
-        Mathematics, Biology, Marathi and English.</div>
-    </div>
-    <div class="shadow col-md-7 col-sm-10 ml-auto mr-2  mb-2 mt-2 text-center edu-itemView ">
-      <div class="row mt-2">
-        <div class="col-1 m-0 p-0">
-          <i class="fa fa-university fa-2x ml-1" aria-hidden="true"></i>
-        </div>
-        <div class="col-8 h5 text-left ml-3 my-auto p-0">
-          Maharashtra State Board of Secondary & Higher Secondary Education, Aurangabad ( Maharashtra )
-        </div>
-
-        <div class="col-md-2 col-sm-10 my-0 mx-auto p-0">
-          <div class="row mt-1 mx-auto">
-            <i class="fa fa-caret-left my-auto fa-2x" style="color:red;border:0px"></i>
-            <div class="year-item align-middle">
-              2012
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 h3 my-2 text-left text-gradient">Secondary School Certificate</div>
-      <div class="col-12 text-justify mb-2 edu-p">Had learned general subjects and does participation in many Cultural
-        events
-      </div>
-    </div>
-
-  </section>
-
-  <section id="section-prjects" class="row m-0 pb-3 px-0">
-    <div class="col-12 h3 mt-0 p-3 mb-3 text-center shadow">
-      <div class="bgbox-title my-auto ml-5" style="width: 200px;">
-        <p class="m-0 p-0 dia-box-text"> My Project Work </p>
-      </div>
-    </div>
-    <div class="project-tab">
-      <div class="btn-box">
-        <button id="tab-btn-1" class="text-center  py-2 m-0" onclick="openProject('content1','tab-btn-1')"><i
-            class="fa fa-android"></i>
-          Android
-        </button>
-        <button id="tab-btn-2" class="text-center  py-2 m-0" onclick="openProject('content2','tab-btn-2')"><i
-            class="fa fa-html5"></i>
-          HTML
-        </button>
-        <button id="tab-btn-3" class="text-center  py-2 m-0" onclick="openProject('content3','tab-btn-3')"><i
-            class="fa fa-file-code-o"></i>
-          JAVA
-        </button>
-        <button id="tab-btn-4" class="text-center  py-2 m-0" onclick="openProject('content4','tab-btn-4')"><i
-            class="fa fa-codepen"></i>
-          REACT JS
-        </button>
-        <button id="tab-btn-5" class="text-center  py-2 m-0" onclick="openProject('content5','tab-btn-5')"><i
-            class="fa fa-code"></i>
-          DOT.NET
-        </button>
-      </div>
-      <div id="content1" class="project-content  m-0 pb-2">
-        <div class="project-item row">
-          <div class="col-md-2 col-sm-12 m-auto"><img src="./img/logo.png" class="mx-auto" alt="Sanjeevani"></div>
-          <div class="col-sm-12 col-md-10 mx-auto">
-            <p class="h4">
-              Sanjeevani SuperMarket
-            </p>
-            <p class="m-0 p-0">Its an android java base application. Which is an e commerce platform on which people can
-              buy daily needs and grocery. Using the app they can be place their order and grocery will be deliverd to
-              their door step. We have implemented a new feture, they can send photo of grocery list and bingo order got
-              placed. The technologies use in that project is Java,XML and Firebase database for the datastorage.</p>
-            <a class="gitHUbLink" href="https://github.com/Deveshwar-Saste-9001/SuperMarket-App" target="_blank"> See
-              Supermarket App Code</a>
-          </div>
-
-        </div>
-        <div class="project-item row mt-2">
-          <div class="col-md-2 col-sm-6 m-auto"><img src="./img/placelogo.jpg" alt="Places"></div>
-          <div class="col-sm-12 col-md-10 mx-auto">
-            <p class="h4">Unknown Tourist Places</p>
-            <p class="m-0 p-0">Unknown tourist places is an application, Which can help that people who love to visit
-              new places, who always eager find out New, Tremendous and Adventures places. if our user have places in
-              their locality, they raise a request to add that place in list, after varification we will add that place
-              in our list. also map help people to get direction to reach out that place. You will get all the detailed
-              information about that place like road condition, safety and advanture level. They can share their review
-              and rating for the places.</p>
-            <a class="gitHUbLink" href="https://github.com/Deveshwar-Saste-9001/UnknownPlaces-AndroidApp"
-              target="_blank">See U.T.P. Code</a>
-          </div>
-
-        </div>
-        <div class="project-item row mt-2">
-          <div class="col-md-2 col-sm-6 m-auto"><img src="./img/logo.png" alt=""></div>
-          <div class="col-sm-12 col-md-10 mx-auto">
-            <p class="h4">Sanjeevani SuperMarket Admin Panel</p>
-            <p class="m-0 p-0">It is an Android app, which is an admin panel for the super market app. Both are
-              sanjeevani supermarket and super market connected to same database. This app help admin to manage their
-              customers and orders. also usefull to maintain the stock of products, adding or removing products, do
-              updation in product specification and give some offers to the customers.
-            </p>
-            <a class="gitHUbLink" href="https://github.com/Deveshwar-Saste-9001/SuperMarketAdmin" target="_blank">See
-              the code On Github</a>
-          </div>
-        </div>
-      </div>
-      <div id="content2" class="project-content  m-0 pb-2">
-        <div class="project-item row">
-          <div class="col-md-2 col-sm-6 m-auto"><a class="navbar-brand" href="#" style="font-size:70px">JOBS</a></div>
-          <div class="col-sm-12 col-md-10 mx-auto">
-            <p class="h4">
-              JOB.COM jobs portal
-            </p>
-            <p class="m-0 p-0">We Have developed an Front End design part of a recruitment website.Using HTML CSS and
-              JAVASCRIPT we had made the design which have search job, login and Registration System. this site help job
-              seeker to find out best sutaible job for them. we list out all the job according to required education and
-              skills. also job provider will add their requirment on site to get perfect candidate.</p>
-            <a class="gitHUbLink" href=" https://deveshwar-saste-9001.github.io/Jobs.com-a-recruitment-platform-/"
-              target="_blank">See the Recruitment Platfrom</a>
-          </div>
-
-        </div>
-        <div class="project-item row">
-          <div class="col-md-2 col-sm-12 m-auto"><a class="navbar-brand" href="#" style="font-size:100px">DS</a></div>
-          <div class="col-sm-12 col-md-10 mx-auto">
-            <p class="h4">MY Resume</p>
-            <p class="m-0 p-0">Its a stitic website which i have developed as my resume. to show my skills and knowledge
-              i had developed this site.this site give basic information about me and my education</p>
-            <a class="gitHUbLink"  href="https://deveshwar-saste-9001.github.io/DeveshwarSaste_Resume/" target="_blank"> See My Resume</a>
-          </div>
-
-        </div>
-
-      </div>
-      <div id="content3" class="project-content  m-0 pb-2">
-        <div class="project-item row">
-          <div class="col-md-2 col-sm-12 m-auto"><a class="navbar-brand" href="#" style="font-size:70px">UTP</a></div>
-          <div class="col-sm-12 col-md-10 mx-auto">
-            <p class="h4">
-              Unknown Tourist Places Backend
-            </p>
-            <p class="m-0 p-0">Unknown tourist places Backend , it's a backend for unknown tourist places. We have
-              Developed this Api using Spring boot java Technology. setted up post and get request to handle all the
-              http request and responces. its a cross platform which we have develop to accept request from react and
-              give responces in the from of json to react app.</p>
-            <a class="gitHUbLink"
-              href="https://github.com/Deveshwar-Saste-9001/Unknown-Tourist-Places_ReactJS_SpringBoot/tree/main/unknown_places_backEnd"
-              target="_blank"> See Code on Github</a>
-          </div>
-
-        </div>
-      </div>
-      <div id="content4" class="project-content m-0 pb-2">
-        <div class="project-item row">
-          <div class="col-md-2 col-sm-6 mx-auto"><a class="navbar-brand" href="#" style="font-size:70px">UTP</a></div>
-          <div class="col-sm-12 col-md-10 mx-auto">
-            <p class="h4">
-              Unknown Tourist Places Frontend
-            </p>
-            <p class="m-0 p-0"> Unknown Tourist Places FrontEnd. It is Front end part of unknown tourist places website,
-              developed using reactJs technology. we have use some react module to develop this app. for styling we have
-              use bootstrap css. Axios is a ReactJs module which help us to send and recieved HTTP requast and
-              responces. we have use axios to communicate with Spring Boot backend app. we have done all the validations
-              and provieded security to users.its a Function ready Website.</p>
-            <a class="gitHUbLink" href="https://github.com/Deveshwar-Saste-9001/Unknown_Tourist_Places_FrontEnd_ReactJs"
-              target="_blank"> See the Code On Github</a>
-          </div>
-
-        </div>
-      </div>
-      <div id="content5" class="project-content  m-0 pb-2">
-        <div class="project-item row">
-          <div class="col-md-2 col-sm-6 m-auto"><img src="./css/icon/dm (1).ico" alt="Sanjeevani"></div>
-          <div class="col-sm-12 col-md-10 mx-auto">
-            <p class="h4">
-              DM Engineering Inventry System
-            </p>
-            <p class="m-0 p-0">Dm Engineering Inventory System is a Dot.net project which we have developed to manage
-              complete inward and outward. which help organisation to maintain their records. it aslo help to find out
-              stack and upcomming orders and list of venders with whom he working. C# language is used to developed this
-              System. basically it is a Desktop base application.</p>
-            <a class="gitHUbLink" href="https://github.com/Deveshwar-Saste-9001/DOT.NET-InventrySystem" target="_blank">
-              See Code on Github</a>
-          </div>
-
-        </div>
-      </div>
-
-
-    </div>
-
-
-
-
-  </section>
-
-
-  <section id='section-achivments' class=" mx-0 p-0">
-    <div class="row mx-0 p-0 justify-content-center">
-      <div class="col-12 h3 mt-0 p-3 mb-3 text-center shadow">
-        <div class="bgbox-title mt-3 mb-2 ml-5">
-          <p class="m-0 p-0 dia-box-text"> Certificates & Achivements </p>
-        </div>
-      </div>
-    </div>
-    <div class="row m-0 p-0">
-
-
-      <div class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-certificate">
-        <i class="fa fa-certificate fa-3x  col-2"></i>
-        <div class="col-9 row">
-          <div class="h5 col-12" width="100%"><strong>Angular Developer </strong></div>
-          <p class="h6 col-12">Provider:-<strong>LinkedIn</strong></p>
-          <p class="col-6">Issued on:- Jan 2022</p>
-          <p class="col-6">Expiration on:- NA</p>
-        </div>
-      </div>
-      <div class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-certificate">
-        <i class="fa fa-certificate fa-3x  col-2"></i>
-        <div class="col-9 row">
-          <div class="h5 col-12" width="100%"><strong>Scala Essential Training</strong></div>
-          <p class="h6 col-12">Provider:-<strong>LinkedIn</strong></p>
-          <p class="col-6">Issued on:- Nov 2021</p>
-          <p class="col-6">Expiration on:- NA</p>
-        </div>
-      </div>
-      <div class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-award">
-        <i class="fa fa-trophy fa-3x  col-2"></i>
-        <div class="col-9 row">
-          <div class="h5 col-12" width="100%"><strong>1st Prize in Blind Programing</strong></div>
-          <p class="h6 col-12"><strong>Hi-tech Institute Of Technology</strong></p>
-          <p class="col-6"></p>
-          <p class="col-6"></p>
-        </div>
-      </div>
-      <div class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-award">
-        <i class="fa fa-trophy fa-3x col-2"></i>
-        <div class="col-9 row">
-          <div class="h5 col-12" width="100%"><strong>Runner Up in Website Development </strong></div>
-          <p class="h6 col-12"><strong>CDAC-MUMBAI</strong></p>
-          <p class="col-6"></p>
-          <p class="col-6"></p>
-        </div>
-      </div>
-      <div class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-badge">
-        <i class="fa fa-id-badge fa-3x col-2"></i>
-        <div class="col-9 row">
-          <div class="h5 col-12" width="100%"><strong>Java Skill Assesment Badge </strong></div>
-          <p class="h6 col-12"><strong>LinkedIn</strong></p>
-          <p class="col-6"></p>
-          <p class="col-6"></p>
-        </div>
-      </div>
-      <div class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-badge">
-        <i class="fa fa-id-badge fa-3x col-2"></i>
-        <div class="col-9 row">
-          <div class="h5 col-12" width="100%"><strong>OOPS Skill Assesment Badge </strong></div>
-          <p class="h6 col-12"><strong>LinkedIn</strong></p>
-          <p class="col-6"></p>
-          <p class="col-6"></p>
-        </div>
-      </div>
-      <div class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-badge">
-        <i class="fa fa-id-badge fa-3x col-2"></i>
-        <div class="col-9 row">
-          <div class="h5 col-12" width="100%"><strong>Angular Skill Assesment Badge </strong></div>
-          <p class="h6 col-12"><strong>LinkedIn</strong></p>
-          <p class="col-6"></p>
-          <p class="col-6"></p>
-        </div>
-      </div>
-      <div class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-badge">
-        <i class="fa fa-id-badge fa-3x col-2"></i>
-        <div class="col-9 row">
-          <div class="h5 col-12" width="100%"><strong>HTML & CSS Skill Assesment Badge </strong></div>
-          <p class="h6 col-12"><strong>LinkedIn</strong></p>
-          <p class="col-6"></p>
-          <p class="col-6"></p>
-        </div>
-      </div>
-
-
-
-
-
-
-
-    </div>
-  </section>
-
-
-  <section id="section-language" class="mt-3 mx-0 p-0">
-    <div class="row mx-0 p-0 justify-content-center">
-      <div class="col-12 h3 mt-0 p-3 mb-3 text-center shadow">
+    <section id="section-experience">
+      <div class="shadow p-2 mt-0 mb-0">
         <div class="bgbox-title my-auto ml-5">
-          <p class="m-0 p-0 dia-box-text"> languages </p>
+          <p class="dia-box-text m-0 p-0">Experiences</p>
         </div>
       </div>
+      <div class="exp-bg mx-0 mb-0 mt-0 p-0 row justify-content-center">
+        <div class="exp-item m-3 col-11">
+          <div class="row col-12 justify-content-between align-items-center">
+            <h4><b>Coding Trainer</b></h4>
+            <h6>Jul.2022 - Present</h6>
+          </div>
+          <div><b>@ Wizklub learning Pvt Ltd. Koramangala, Bangalore</b></div>
+          <p>
+            I am woring as conding instructor at wizklub in Bangalore, my role and responsibility is to teach student about coding and technologies, we are teaching them basic concepts of coding and making their base strong along with this i am teaching them Python, Html, CSS and JavaScript and the  most concepts of IOT.
+          </p>
+        </div>
+        <div class="exp-item m-3 col-11">
+          <div class="row col-12  justify-content-between align-items-center">
+            <h4><b>Senior Associate</b></h4>
+            <h6>Oct.2022 - Jul-2022</h6>
+          </div>
+          <div><b>@CRISIL LTD, Mumbai, Maharashtra</b></div>
+          <p>
+          I had a experience on building SQL Queries and Scala Programming,
+          i was working and Angular Development. my role was to creact webpages and web dashboard using angular for client according to their need. 
+          so i have an experience as angular Developer. i have pretty good knowledge about it.
+          along with this i have handled some backend responsibility too and helped to build complex Database Queries.
 
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-4 mt-2">
-        <div class="card1 bg-light shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper1"
-            style="background: linear-gradient(45deg,#ed4265,#ffedbc);">
-            <div class="wave" style="bottom: 80%;">
+          </p>
+        </div>
+      </div>
+    </section>
+    <div>
+      <section id="section-Skills" class="m-0 p-0">
+        <div class="shadow p-2 mt-0 mb-3">
+          <div class="bgbox-title my-auto ml-5">
+            <p class="dia-box-text m-0 p-0">Skills</p>
+          </div>
+        </div>
+        <div class="mx-0 mb-0 mt-3 p-0 row justify-content-center">
+          <div class="skills-list mb-3 col-md-3 col-sm-4">
+            <div class="outer">
+              <div class="inner">
+                <div id="number text-center">
+                  90% <br />
+                  <strong>JAVA</strong>
+                </div>
+              </div>
+            </div>
+            <svg class="progess-circle" width="160px" height="160px">
+              <circle
+                class="pro-cer"
+                cx="80"
+                cy="80"
+                r="70"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="skills-list mb-3 col-md-3 col-sm-4">
+            <div class="outer">
+              <div class="inner">
+                <div class="number text-center">
+                  80%
+                  <br />
+                  <strong> Data Structure </strong>
+                </div>
+              </div>
+            </div>
+            <svg class="progess-circle" width="160px" height="160px">
+              <circle
+                class="pro-cer"
+                cx="80"
+                cy="80"
+                r="70"
+                stroke-linecap="round"
+                style="stroke-dasharray: 377; stroke-dashoffset: 377"
+              />
+            </svg>
+          </div>
+          <div class="skills-list mb-3 col-md-3 col-sm-4">
+            <div class="outer">
+              <div class="inner">
+                <div class="number text-center">
+                  75% <br />
+                  <strong> JavaScript </strong>
+                </div>
+              </div>
+            </div>
+            <svg class="progess-circle" width="160px" height="160px">
+              <circle
+                class="pro-cer"
+                cx="80"
+                cy="80"
+                r="70"
+                stroke-linecap="round"
+                style="stroke-dasharray: 354; stroke-dashoffset: 354"
+              />
+            </svg>
+          </div>
+          <div class="skills-list mb-3 col-md-3 col-sm-4">
+            <div class="outer">
+              <div class="inner">
+                <div class="number text-center">
+                  85% <br />
+                  <strong> HTML & CSS </strong>
+                </div>
+              </div>
+            </div>
+            <svg class="progess-circle" width="160px" height="160px">
+              <circle
+                class="pro-cer"
+                cx="80"
+                cy="80"
+                r="70"
+                stroke-linecap="round"
+                style="stroke-dasharray: 401; stroke-dashoffset: 401"
+              />
+            </svg>
+          </div>
+          <div class="skills-list mb-3 col-md-3 col-sm-4">
+            <div class="outer">
+              <div class="inner">
+                <div class="number text-center">
+                  60% <br />
+                  <strong> Angular & ReactJS </strong>
+                </div>
+              </div>
+            </div>
+            <svg class="progess-circle" width="160px" height="160px">
+              <circle
+                class="pro-cer"
+                cx="80"
+                cy="80"
+                r="70"
+                stroke-linecap="round"
+                style="stroke-dasharray: 283; stroke-dashoffset: 283"
+              />
+            </svg>
+          </div>
+          <div class="skills-list mb-3 col-md-3 col-sm-4">
+            <div class="outer">
+              <div class="inner">
+                <div class="number text-center">
+                  70% <br />
+                  <strong> SQL </strong>
+                </div>
+              </div>
+            </div>
+            <svg class="progess-circle" width="160px" height="160px">
+              <circle
+                class="pro-cer"
+                cx="80"
+                cy="80"
+                r="70"
+                stroke-linecap="round"
+                style="stroke-dasharray: 330; stroke-dashoffset: 330"
+              />
+            </svg>
+          </div>
+          <div class="skills-list mb-3 col-md-3 col-sm-4">
+            <div class="outer">
+              <div class="inner">
+                <div class="number text-center">
+                  78% <br />
+                  <strong> Spring Boot </strong>
+                </div>
+              </div>
+            </div>
+            <svg class="progess-circle" width="160px" height="160px">
+              <defs>
+                <linearGradient id="grad-sboot" height>
+                  <stop
+                    offset="0%"
+                    style="stop-color: #ff0084; stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #33001b; stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <circle
+                class="pro-cer"
+                cx="80"
+                cy="80"
+                r="70"
+                stroke-linecap="round"
+                style="stroke-dasharray: 368; stroke-dashoffset: 368"
+              />
+            </svg>
+          </div>
+          <div class="skills-list mb-3 col-md-3 col-sm-4">
+            <div class="outer">
+              <div class="inner">
+                <div class="number text-center">
+                  60% <br />
+                  <strong> Android </strong>
+                </div>
+              </div>
+            </div>
+            <svg class="progess-circle" width="160px" height="160px">
+              <circle
+                class="pro-cer"
+                cx="80"
+                cy="80"
+                r="70"
+                stroke-linecap="round"
+                style="stroke-dasharray: 283; stroke-dashoffset: 283"
+              />
+            </svg>
+          </div>
+          <div class="skills-list mb-3 col-md-3 col-sm-4">
+            <div class="outer">
+              <div class="inner">
+                <div class="number text-center">
+                  85% <br />
+                  <strong> Bootstrap </strong>
+                </div>
+              </div>
+            </div>
+            <svg class="progess-circle" width="160px" height="160px">
+              <circle
+                class="pro-cer"
+                cx="80"
+                cy="80"
+                r="70"
+                stroke-linecap="round"
+                style="stroke-dasharray: 401; stroke-dashoffset: 401"
+              />
+            </svg>
+          </div>
+          <div class="skills-list mb-3 col-md-3 col-sm-4">
+            <div class="outer">
+              <div class="inner">
+                <div class="number text-center">
+                  70% <br />
+                  <strong> J2EE </strong>
+                </div>
+              </div>
+            </div>
+            <svg class="progess-circle" width="160px" height="160px">
+              <circle
+                class="pro-cer"
+                cx="80"
+                cy="80"
+                r="70"
+                stroke-linecap="round"
+                style="stroke-dasharray: 330; stroke-dashoffset: 330"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="section-edu" class="row m-0 p-0">
+      <div class="col-12 h3 mt-0 p-2 mb-3 text-center shadow">
+        <div class="bgbox-title my-auto ml-5">
+          <p class="m-0 p-0 dia-box-text">Education</p>
+        </div>
+      </div>
+      <div
+        class="shadow col-md-7 col-sm-10 mr-auto ml-2 mt-2 text-center edu-itemView"
+      >
+        <div class="row mt-2">
+          <div class="col-1 m-0 p-0">
+            <i class="fa fa-university ml-1 fa-2x" aria-hidden="true"></i>
+          </div>
+          <div class="col-8 h5 text-left ml-3 my-auto p-0">
+            Center for Development of Advance Computing, Kharghar ( Mumbai )
+          </div>
+
+          <div class="col-md-2 col-sm-10 m-0 p-0">
+            <div class="row mt-1 mx-auto">
+              <i
+                class="fa fa-caret-left my-auto fa-2x"
+                style="color: red; border: 0px"
+              ></i>
+              <div class="year-item">2021</div>
             </div>
           </div>
         </div>
-        <div class="card-footer1 bg-white">
-          <div class="card-title1">English (80%)</div>
+        <div class="col-12 h3 my-2 text-left text-gradient">
+          Post Graduation-Diploma in Advance Computing
+        </div>
+        <div class="col-12 text-justify mb-2 edu-p">
+          During cdac journey,I had learn oops concepts,basic java, Data
+          Structure, DBMS, ReactJS, NodeJS,Advance Java, HTML,CSS and
+          Javascript. Worked on many projects and does participation in many
+          activities.
         </div>
       </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-4 mt-2">
-        <div class="card1 bg-light shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper1"
-            style="background: linear-gradient(45deg,#dd5e89,#f7bb97);">
-            <div class="wave" style="bottom: 95%;">
+      <div
+        class="shadow col-md-7 col-sm-10 ml-auto mr-2 mt-2 text-center edu-itemView"
+      >
+        <div class="row mt-2">
+          <div class="col-1 m-0 p-0">
+            <i class="fa fa-university fa-2x ml-1" aria-hidden="true"></i>
+          </div>
+          <div class="col-8 h5 text-left ml-3 my-auto p-0">
+            Dr. Babasaheb Ambedkar Marathawada University, Aurangabad (
+            Maharashtra )
+          </div>
 
+          <div class="col-md-2 col-sm-10 my-0 mx-auto p-0">
+            <div class="row mt-1 mx-auto">
+              <i
+                class="fa fa-caret-left my-auto fa-2x"
+                style="color: red; border: 0px"
+              ></i>
+              <div class="year-item align-middle">2019</div>
             </div>
           </div>
         </div>
-        <div class="card-footer1 bg-white">
-          <div class="card-title1">Marathi (95%)</div>
+        <div class="col-12 h3 my-2 text-left text-gradient">
+          BE-Computer Science & Engineering
+        </div>
+        <div class="col-12 text-justify mb-2 edu-p">
+          During my graduation, had learn subjects like Java, Computer Network,
+          Visual Modeling, Mobile Computing any many more. Worked on many
+          projects like Gym Management System(C#.net),Text To Voice Conversion
+          App(Android) and A Social Networking Site (Asp.net). Participated in
+          many activities like Blind Programming Compitition, Blood Donation,
+          Traser Hunt and some Cultural events.
         </div>
       </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-4 mt-2">
-        <div class="card1 bg-light shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper1"
-            style="background: linear-gradient(45deg,#ffb88c,#de6262);">
-            <div class="wave" style="bottom: 90%;">
+      <div
+        class="shadow col-md-7 col-sm-10 mr-auto mx-2 mt-2 text-center edu-itemView"
+      >
+        <div class="row mt-2">
+          <div class="col-1 m-0 p-0">
+            <i class="fa fa-university fa-2x ml-1" aria-hidden="true"></i>
+          </div>
+          <div class="col-8 h5 text-left ml-3 my-auto p-0">
+            Maharashtra State Board of Secondary & Higher Secondary Education,
+            Aurangabad ( Maharashtra )
+          </div>
 
+          <div class="col-md-2 col-sm-10 my-0 mx-auto p-0">
+            <div class="row mt-1 mx-auto">
+              <i
+                class="fa fa-caret-left my-auto fa-2x"
+                style="color: red; border: 0px"
+              ></i>
+              <div class="year-item align-middle">2014</div>
             </div>
           </div>
         </div>
-        <div class="card-footer1 bg-white">
-          <div class="card-title1">Hindi (90%)</div>
+        <div class="col-12 h3 my-2 text-left text-gradient">
+          Higher Secondary School Certificate ( 12th )
+        </div>
+        <div class="col-12 text-justify mb-2 edu-p">
+          Belong to general science field. Had learned Physics, Chemistry,
+          Mathematics, Biology, Marathi and English.
         </div>
       </div>
-    </div>
-  </section>
+      <div
+        class="shadow col-md-7 col-sm-10 ml-auto mr-2 mb-2 mt-2 text-center edu-itemView"
+      >
+        <div class="row mt-2">
+          <div class="col-1 m-0 p-0">
+            <i class="fa fa-university fa-2x ml-1" aria-hidden="true"></i>
+          </div>
+          <div class="col-8 h5 text-left ml-3 my-auto p-0">
+            Maharashtra State Board of Secondary & Higher Secondary Education,
+            Aurangabad ( Maharashtra )
+          </div>
 
-  <section id="aboutme" class="row m-0 p-0">
-    <div class="col-12 h3 mt-0 p-3 mb-3 text-center shadow">
-      <div class="bgbox-title my-auto ml-5">
-        <p class="m-0 p-0 dia-box-text">Contact Me</p>
+          <div class="col-md-2 col-sm-10 my-0 mx-auto p-0">
+            <div class="row mt-1 mx-auto">
+              <i
+                class="fa fa-caret-left my-auto fa-2x"
+                style="color: red; border: 0px"
+              ></i>
+              <div class="year-item align-middle">2012</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 h3 my-2 text-left text-gradient">
+          Secondary School Certificate
+        </div>
+        <div class="col-12 text-justify mb-2 edu-p">
+          Had learned general subjects and does participation in many Cultural
+          events
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="col-md-6 col-sm-12 mt-2 text-left h6">
-      <div class="p-3 m-2 ">
-        <strong> Permanent Address :- </strong> House No 630, Near Mahadev Temple, Sajapur Road, Salampure, Wadgaon
-        Kolhati, Aurangabad, Maharashtra-431136
+    <section id="section-prjects" class="row m-0 pb-3 px-0">
+      <div class="col-12 h3 mt-0 p-3 mb-3 text-center shadow">
+        <div class="bgbox-title my-auto ml-5" style="width: 200px">
+          <p class="m-0 p-0 dia-box-text">My Project Work</p>
+        </div>
       </div>
-      <div class="p-3 m-2">
-        <strong> Current Address :- </strong> House No 19, Near Mhatre Bridge, Dattawadi, Pune, Maharashtra-30
+      <div class="project-tab">
+        <div class="btn-box">
+          <button
+            id="tab-btn-1"
+            class="text-center py-2 m-0"
+            onclick="openProject('content1','tab-btn-1')"
+          >
+            <i class="fa fa-android"></i>
+            Android
+          </button>
+          <button
+            id="tab-btn-2"
+            class="text-center py-2 m-0"
+            onclick="openProject('content2','tab-btn-2')"
+          >
+            <i class="fa fa-html5"></i>
+            HTML
+          </button>
+          <button
+            id="tab-btn-3"
+            class="text-center py-2 m-0"
+            onclick="openProject('content3','tab-btn-3')"
+          >
+            <i class="fa fa-file-code-o"></i>
+            JAVA
+          </button>
+          <button
+            id="tab-btn-4"
+            class="text-center py-2 m-0"
+            onclick="openProject('content4','tab-btn-4')"
+          >
+            <i class="fa fa-codepen"></i>
+            REACT JS
+          </button>
+          <button
+            id="tab-btn-5"
+            class="text-center py-2 m-0"
+            onclick="openProject('content5','tab-btn-5')"
+          >
+            <i class="fa fa-code"></i>
+            DOT.NET
+          </button>
+        </div>
+        <div id="content1" class="project-content m-0 pb-2">
+          <div class="project-item row">
+            <div class="col-md-2 col-sm-12 m-auto">
+              <img src="./img/logo.png" class="mx-auto" alt="Sanjeevani" />
+            </div>
+            <div class="col-sm-12 col-md-10 mx-auto">
+              <p class="h4">Sanjeevani SuperMarket</p>
+              <p class="m-0 p-0">
+                Its an android java base application. Which is an e commerce
+                platform on which people can buy daily needs and grocery. Using
+                the app they can be place their order and grocery will be
+                deliverd to their door step. We have implemented a new feture,
+                they can send photo of grocery list and bingo order got placed.
+                The technologies use in that project is Java,XML and Firebase
+                database for the datastorage.
+              </p>
+              <a
+                class="gitHUbLink"
+                href="https://github.com/Deveshwar-Saste-9001/SuperMarket-App"
+                target="_blank"
+              >
+                See Supermarket App Code</a
+              >
+            </div>
+          </div>
+          <div class="project-item row mt-2">
+            <div class="col-md-2 col-sm-6 m-auto">
+              <img src="./img/placelogo.jpg" alt="Places" />
+            </div>
+            <div class="col-sm-12 col-md-10 mx-auto">
+              <p class="h4">Unknown Tourist Places</p>
+              <p class="m-0 p-0">
+                Unknown tourist places is an application, Which can help that
+                people who love to visit new places, who always eager find out
+                New, Tremendous and Adventures places. if our user have places
+                in their locality, they raise a request to add that place in
+                list, after varification we will add that place in our list.
+                also map help people to get direction to reach out that place.
+                You will get all the detailed information about that place like
+                road condition, safety and advanture level. They can share their
+                review and rating for the places.
+              </p>
+              <a
+                class="gitHUbLink"
+                href="https://github.com/Deveshwar-Saste-9001/UnknownPlaces-AndroidApp"
+                target="_blank"
+                >See Unknown Tourist PLaces Code</a
+              >
+            </div>
+          </div>
+          <div class="project-item row mt-2">
+            <div class="col-md-2 col-sm-6 m-auto">
+              <img src="./img/logo.png" alt="" />
+            </div>
+            <div class="col-sm-12 col-md-10 mx-auto">
+              <p class="h4">Sanjeevani SuperMarket Admin Panel</p>
+              <p class="m-0 p-0">
+                It is an Android app, which is an admin panel for the super
+                market app. Both are sanjeevani supermarket and super market
+                connected to same database. This app help admin to manage their
+                customers and orders. also usefull to maintain the stock of
+                products, adding or removing products, do updation in product
+                specification and give some offers to the customers.
+              </p>
+              <a
+                class="gitHUbLink"
+                href="https://github.com/Deveshwar-Saste-9001/SuperMarketAdmin"
+                target="_blank"
+                >See the code On Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="content2" class="project-content m-0 pb-2">
+          <div class="project-item row">
+            <div class="col-md-2 col-sm-6 m-auto">
+              <a class="navbar-brand" href="#" style="font-size: 70px">JOBS</a>
+            </div>
+            <div class="col-sm-12 col-md-10 mx-auto">
+              <p class="h4">JOB.COM jobs portal</p>
+              <p class="m-0 p-0">
+                We Have developed an Front End design part of a recruitment
+                website.Using HTML CSS and JAVASCRIPT we had made the design
+                which have search job, login and Registration System. this site
+                help job seeker to find out best sutaible job for them. we list
+                out all the job according to required education and skills. also
+                job provider will add their requirment on site to get perfect
+                candidate.
+              </p>
+              <a
+                class="gitHUbLink"
+                href=" https://deveshwar-saste-9001.github.io/Jobs.com-a-recruitment-platform-/"
+                target="_blank"
+                >See the Recruitment Platfrom</a
+              >
+            </div>
+          </div>
+          <div class="project-item row">
+            <div class="col-md-2 col-sm-12 m-auto">
+              <a class="navbar-brand" href="#" style="font-size: 100px">DS</a>
+            </div>
+            <div class="col-sm-12 col-md-10 mx-auto">
+              <p class="h4">MY Resume</p>
+              <p class="m-0 p-0">
+                Its a stitic website which i have developed as my resume. to
+                show my skills and knowledge i had developed this site.this site
+                give basic information about me and my education
+              </p>
+              <a
+                class="gitHUbLink"
+                href="https://deveshwar-saste-9001.github.io/DeveshwarSaste_Resume/"
+                target="_blank"
+              >
+                See My Resume</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="content3" class="project-content m-0 pb-2">
+          <div class="project-item row">
+            <div class="col-md-2 col-sm-12 m-auto">
+              <a class="navbar-brand" href="#" style="font-size: 70px">UTP</a>
+            </div>
+            <div class="col-sm-12 col-md-10 mx-auto">
+              <p class="h4">Unknown Tourist Places Backend</p>
+              <p class="m-0 p-0">
+                Unknown tourist places Backend , it's a backend for unknown
+                tourist places. We have Developed this Api using Spring boot
+                java Technology. setted up post and get request to handle all
+                the http request and responces. its a cross platform which we
+                have develop to accept request from react and give responces in
+                the from of json to react app.
+              </p>
+              <a
+                class="gitHUbLink"
+                href="https://github.com/Deveshwar-Saste-9001/Unknown-Tourist-Places_ReactJS_SpringBoot/tree/main/unknown_places_backEnd"
+                target="_blank"
+              >
+                See Code on Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="content4" class="project-content m-0 pb-2">
+          <div class="project-item row">
+            <div class="col-md-2 col-sm-6 mx-auto">
+              <a class="navbar-brand" href="#" style="font-size: 70px">UTP</a>
+            </div>
+            <div class="col-sm-12 col-md-10 mx-auto">
+              <p class="h4">Unknown Tourist Places Frontend</p>
+              <p class="m-0 p-0">
+                Unknown Tourist Places FrontEnd. It is Front end part of unknown
+                tourist places website, developed using reactJs technology. we
+                have use some react module to develop this app. for styling we
+                have use bootstrap css. Axios is a ReactJs module which help us
+                to send and recieved HTTP requast and responces. we have use
+                axios to communicate with Spring Boot backend app. we have done
+                all the validations and provieded security to users.its a
+                Function ready Website.
+              </p>
+              <a
+                class="gitHUbLink"
+                href="https://github.com/Deveshwar-Saste-9001/Unknown_Tourist_Places_FrontEnd_ReactJs"
+                target="_blank"
+              >
+                See the Code On Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="content5" class="project-content m-0 pb-2">
+          <div class="project-item row">
+            <div class="col-md-2 col-sm-6 m-auto">
+              <img src="./css/icon/dm (1).ico" alt="Sanjeevani" />
+            </div>
+            <div class="col-sm-12 col-md-10 mx-auto">
+              <p class="h4">DM Engineering Inventry System</p>
+              <p class="m-0 p-0">
+                Dm Engineering Inventory System is a Dot.net project which we
+                have developed to manage complete inward and outward. which help
+                organisation to maintain their records. it aslo help to find out
+                stack and upcomming orders and list of venders with whom he
+                working. C# language is used to developed this System. basically
+                it is a Desktop base application.
+              </p>
+              <a
+                class="gitHUbLink"
+                href="https://github.com/Deveshwar-Saste-9001/DOT.NET-InventrySystem"
+                target="_blank"
+              >
+                See Code on Github</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-    </div>
-    <div class="col-md-6 col-sm-12 mt-2 row justify-content-center text-center">
-      <div class="col-12">
-        <strong> Contact No :- </strong> +91 7040121294
-      </div>
-      <div class="col-12">
-        <strong> Email :- </strong> deveshwarsaste7@gmail.com
+    <section id="section-achivments" class="mx-0 p-0">
+      <div class="row mx-0 p-0 justify-content-center">
+        <div class="col-12 h3 mt-0 p-3 mb-3 text-center shadow">
+          <div class="bgbox-title mt-3 mb-2 ml-5">
+            <p class="m-0 p-0 dia-box-text">Certificates & Achivements</p>
+          </div>
+        </div>
       </div>
       <div class="row m-0 p-0">
-        <div class="row social-icon mx-auto">
-          <a href="https://instagram.com/er.deveshwar_saste_patil?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa fa-instagram fa-3x mr-2" aria-hidden="true"></i></a>
-         <a href="https://www.facebook.com/devya.saste" target="_blank"><i class="fa fa-facebook-square fa-3x mr-2" aria-hidden="true"></i></a>
-          <a href="https://www.linkedin.com/in/deveshwar-saste-12b24b172/" target="_blank"><i class="fa fa-linkedin-square fa-3x mr-2" aria-hidden="true"></i></a>
-          <a href="https://github.com/Deveshwar-Saste-9001" target="_blank"><i class="fa fa-github-square fa-3x mr-2" aria-hidden="true"></i></a>
-          <a href="https://twitter.com/DeveshwarSaste" target="_blank"><i class="fa fa-twitter-square fa-3x mr-2" aria-hidden="true"></i></a>
+        <div
+          class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-certificate"
+        >
+          <i class="fa fa-certificate fa-3x col-2"></i>
+          <div class="col-9 row">
+            <div class="h5 col-12" width="100%">
+              <strong>Angular Developer </strong>
+            </div>
+            <p class="h6 col-12">Provider:-<strong>LinkedIn</strong></p>
+            <p class="col-6">Issued on:- Jan 2022</p>
+            <p class="col-6">Expiration on:- NA</p>
+          </div>
+        </div>
+        <div
+          class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-certificate"
+        >
+          <i class="fa fa-certificate fa-3x col-2"></i>
+          <div class="col-9 row">
+            <div class="h5 col-12" width="100%">
+              <strong> Essential Training</strong>
+            </div>
+            <p class="h6 col-12">Provider:-<strong>LinkedIn</strong></p>
+            <p class="col-6">Issued on:- Nov 2021</p>
+            <p class="col-6">Expiration on:- NA</p>
+          </div>
+        </div>
+        <div class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-award">
+          <i class="fa fa-trophy fa-3x col-2"></i>
+          <div class="col-9 row">
+            <div class="h5 col-12" width="100%">
+              <strong>1st Prize in Blind Programing</strong>
+            </div>
+            <p class="h6 col-12">
+              <strong>Hi-tech Institute Of Technology</strong>
+            </p>
+            <p class="col-6"></p>
+            <p class="col-6"></p>
+          </div>
+        </div>
+        <div class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-award">
+          <i class="fa fa-trophy fa-3x col-2"></i>
+          <div class="col-9 row">
+            <div class="h5 col-12" width="100%">
+              <strong>Runner Up in Website Development </strong>
+            </div>
+            <p class="h6 col-12"><strong>CDAC-MUMBAI</strong></p>
+            <p class="col-6"></p>
+            <p class="col-6"></p>
+          </div>
+        </div>
+        <div class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-badge">
+          <i class="fa fa-id-badge fa-3x col-2"></i>
+          <div class="col-9 row">
+            <div class="h5 col-12" width="100%">
+              <strong>Java Skill Assesment Badge </strong>
+            </div>
+            <p class="h6 col-12"><strong>LinkedIn</strong></p>
+            <p class="col-6"></p>
+            <p class="col-6"></p>
+          </div>
+        </div>
+        <div class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-badge">
+          <i class="fa fa-id-badge fa-3x col-2"></i>
+          <div class="col-9 row">
+            <div class="h5 col-12" width="100%">
+              <strong>OOPS Skill Assesment Badge </strong>
+            </div>
+            <p class="h6 col-12"><strong>LinkedIn</strong></p>
+            <p class="col-6"></p>
+            <p class="col-6"></p>
+          </div>
+        </div>
+        <div class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-badge">
+          <i class="fa fa-id-badge fa-3x col-2"></i>
+          <div class="col-9 row">
+            <div class="h5 col-12" width="100%">
+              <strong>Angular Skill Assesment Badge </strong>
+            </div>
+            <p class="h6 col-12"><strong>LinkedIn</strong></p>
+            <p class="col-6"></p>
+            <p class="col-6"></p>
+          </div>
+        </div>
+        <div class="row col-md-5 col-sm-11 mt-2 mx-auto certificate bg-badge">
+          <i class="fa fa-id-badge fa-3x col-2"></i>
+          <div class="col-9 row">
+            <div class="h5 col-12" width="100%">
+              <strong>HTML & CSS Skill Assesment Badge </strong>
+            </div>
+            <p class="h6 col-12"><strong>LinkedIn</strong></p>
+            <p class="col-6"></p>
+            <p class="col-6"></p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
+    <section id="section-language" class="mt-3 mx-0 p-0">
+      <div class="row mx-0 p-0 justify-content-center">
+        <div class="col-12 h3 mt-0 p-3 mb-3 text-center shadow">
+          <div class="bgbox-title my-auto ml-5">
+            <p class="m-0 p-0 dia-box-text">languages</p>
+          </div>
+        </div>
 
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-4 mt-2">
+          <div class="card1 bg-light shadow text-center">
+            <div
+              class="position-relative rounded-top progress-wrapper1"
+              style="background: linear-gradient(45deg, #ed4265, #ffedbc)"
+            >
+              <div class="wave" style="bottom: 95%"></div>
+            </div>
+          </div>
+          <div class="card-footer1 bg-white">
+            <div class="card-title1">English (95%)</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-4 mt-2">
+          <div class="card1 bg-light shadow text-center">
+            <div
+              class="position-relative rounded-top progress-wrapper1"
+              style="background: linear-gradient(45deg, #dd5e89, #f7bb97)"
+            >
+              <div class="wave" style="bottom: 100%"></div>
+            </div>
+          </div>
+          <div class="card-footer1 bg-white">
+            <div class="card-title1">Marathi (100%)</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-4 mt-2">
+          <div class="card1 bg-light shadow text-center">
+            <div
+              class="position-relative rounded-top progress-wrapper1"
+              style="background: linear-gradient(45deg, #ffb88c, #de6262)"
+            >
+              <div class="wave" style="bottom: 100%"></div>
+            </div>
+          </div>
+          <div class="card-footer1 bg-white">
+            <div class="card-title1">Hindi (100%)</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </section>
-  <footer class="col-12 text-center m-0 p-0 row justify-content-center" width="100%" height="100px">
-    <div class="my-auto">
-      Deveshwar Saste © Jul-2022 Made with  
-    </div>
-    <strong class="heart ml-2" style="font-size:30px;color:red;">&hearts;</strong>
-  </footer>
+    <section id="aboutme" class="row">
+      <div class="col-12 h3 mt-0 p-3 mb-3 text-center shadow">
+        <div class="bgbox-title my-auto ml-5">
+          <p class="m-0 p-0 dia-box-text">Contact Me</p>
+        </div>
+      </div>
 
-</body>
-<script src="./javascript/deveshwar.js">
-
-</script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+      <div class="col-6 mt-2 text-left h6">
+        <div class="p-3 m-2">
+          <strong> Permanent Address :- </strong> House No 630, Near Mahadev
+          Temple, Sajapur Read, Salampure, Wadgaon Kolhati, Aurangabad,
+          Maharashtra-431136
+        </div>
+        <div class="p-3 m-2">
+          <strong> Current Address :- </strong> Annapurneshwari Boys PG,near
+          Mahalakshmi Layout bus stand, Mahalakshmi Layout, Bangalore,
+          Karnataka-560036
+        </div>
+      </div>
+      <div class="col-6 mt-2 row justify-content-center text-center">
+        <div class="col-12">
+          <strong> Contact No :- </strong> +91 7040121294
+        </div>
+        <div class="col-12">
+          <strong> Email :- </strong> deveshwarsaste7@gmail.com
+        </div>
+        <div class="row m-0 p-0">
+          <div class="row social-icon mx-auto">
+            <a
+              href="https://instagram.com/er.deveshwar_saste_patil?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              ><i class="fa fa-instagram fa-3x mr-2" aria-hidden="true"></i
+            ></a>
+           
+            <a
+              href="https://www.linkedin.com/in/deveshwar-saste-12b24b172/"
+              target="_blank"
+              ><i
+                class="fa fa-linkedin-square fa-3x mr-2"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a href="https://github.com/Deveshwar-Saste-9001" target="_blank"
+              ><i class="fa fa-github-square fa-3x mr-2" aria-hidden="true"></i
+            ></a>
+            <a href="https://twitter.com/DeveshwarSaste" target="_blank"
+              ><i class="fa fa-twitter-square fa-3x mr-2" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="col-12 text-center row justify-content-center"
+      width="100%"
+      height="100px"
+    >
+      <div class="my-auto">Deveshwar Saste © Jul-2022 Made with</div>
+      <strong class="heart ml-2" style="font-size: 30px; color: red"
+        >&hearts;</strong
+      >
+    </footer>
+  </body>
+  <script src="./javascript/deveshwar.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
 </html>
