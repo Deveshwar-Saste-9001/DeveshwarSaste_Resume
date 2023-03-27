@@ -377,7 +377,7 @@ body {
         width: 18%;
         font-size: 10px;
     }
-    .edu-p{
+    .edu-p {
         overflow-x: hidden;
         overflow-y: scroll;
         height: 150px;
@@ -482,6 +482,16 @@ transition: all 0.3s ease-in-out !important;
 
     
 }
+
+@media only screen and (max-width: 800px) {
+    .dynamic{
+        font-size: 24px;
+        -webkit-box-reflect: below -16px linear-gradient(transparent,rgba(0,0,0,0.2));
+    }
+.exp-bg{
+    overflow-y: scroll;
+}
+}
 .dynamic li{
 position: relative;
 display: inline-block;
@@ -516,15 +526,3 @@ height: 500px;
     color: black;
     font-size: 16px;
 }
-
-  
-
-
-
-
-
-
-
-
-
-
